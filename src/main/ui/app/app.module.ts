@@ -2,17 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
-
+import { AppRoutingModule }     from './app-routing.module';
+import { DetailInputComponent} from '../practice/detail-input.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetailInputComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

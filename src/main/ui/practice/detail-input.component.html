@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Add user</h1>
+  <form [formGroup]="form" >
+  <div>
+    <input type="text" class="form-control" [formControl]="form.controls['firstname']"><br/>
+    <input type="text" class="form-control" [formControl]="form.controls['lastname']"><br/>
+    <input type="text" class="form-control" [formControl]="form.controls['address1']"><br/>
+    <input type="text" class="form-control" [formControl]="form.controls['address2']"><br/>
+  </div>
+  <div class="margin-20">
+      <div>Form details:-</div>
+      <pre>Is Form valid?: <br>{{form.valid | json}}</pre>
+      <pre>Form value: <br>{{form.value | json}}</pre>
+    </div>
+    <div class="margin-20">
+      Form changes:
+    </div>
+    <div *ngFor="let event of events" class="margin-20">
+      <pre> {{ event | json }} </pre>
+    </div>
+</form>
+
+</div>

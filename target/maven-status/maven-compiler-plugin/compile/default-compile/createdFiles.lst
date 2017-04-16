@@ -1,1 +1,4 @@
+com/bigol/User.class
 com/bigol/BigolApplication.class
+com/bigol/UserRepository.class
+com/bigol/WebConfiguration.class
